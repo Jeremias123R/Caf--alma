@@ -1,0 +1,476 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #F7F2EA;
+
+    color: #2F2925;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    padding: 24px 20px;
+
+    border-bottom: 1px solid #D8CEC2;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+header h1 {
+    margin: 0;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+/* NAVEGACIÓN */
+
+nav {
+    display: flex;
+
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #2F2925;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 0.5px;
+
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #A65D43;
+}
+
+
+/* CONTENIDO */
+
+main {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 35px 20px 55px;
+}
+
+
+/* TEXTOS PEQUEÑOS */
+
+section p:first-child {
+    color: #A65D43;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+
+/* TÍTULOS */
+
+h2 {
+    font-size: 40px;
+
+    line-height: 1.15;
+
+    margin: 20px 0;
+
+    max-width: 600px;
+}
+
+
+/* DESCRIPCIONES */
+
+section p:last-child {
+    color: #6B625C;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 550px;
+}
+
+
+/* IMÁGENES */
+
+img {
+    display: block;
+
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 30px auto;
+}
+
+
+/* IMAGEN PRINCIPAL */
+
+.hero-image {
+    margin-top: 30px;
+
+    overflow: hidden;
+
+    padding: 8px 0;
+
+    border-top: 1px solid #D8CEC2;
+
+    border-bottom: 1px solid #D8CEC2;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+
+/* AMBIENTE */
+
+.ambiente {
+    margin-top: 55px;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #D8CEC2;
+}
+
+.ambiente h2 {
+    max-width: 550px;
+
+    font-size: 32px;
+
+    margin: 20px 0 30px;
+}
+
+.ambiente-image {
+    max-width: 680px;
+
+    margin-left: auto;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid #D8CEC2;
+}
+
+.ambiente-image img {
+    width: 100%;
+
+    margin: 0;
+}
+
+
+/* EL RITUAL */
+
+.ritual {
+    margin-top: 55px;
+
+    padding: 25px 0 0;
+
+    border-top: 1px solid #D8CEC2;
+}
+
+.ritual p:first-child {
+    color: #A65D43;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+.ritual h2 {
+    max-width: 500px;
+
+    font-size: 32px;
+
+    margin: 20px 0;
+}
+
+.ritual p:last-child {
+    max-width: 500px;
+
+    color: #6B625C;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* IMAGEN DE LECTURA */
+
+.lectura-image {
+    max-width: 520px;
+
+    margin-top: 30px;
+
+    margin-left: auto;
+
+    padding: 8px 0;
+
+    border-top: 1px solid #D8CEC2;
+
+    border-bottom: 1px solid #D8CEC2;
+}
+
+.lectura-image img {
+    width: 100%;
+
+    margin: 0;
+}
+
+
+/* MENÚ */
+
+.menu {
+    margin-top: 0;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #D8CEC2;
+}
+
+.menu > p {
+    color: #A65D43;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+.menu h2 {
+    max-width: 500px;
+
+    font-size: 32px;
+
+    margin: 20px 0 35px;
+}
+
+
+/* LISTA DEL MENÚ */
+
+.menu-list {
+    max-width: 650px;
+}
+
+.menu-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #D8CEC2;
+
+    cursor: pointer;
+
+    transition: padding-left 0.2s ease;
+}
+
+.menu-item:hover {
+    padding-left: 8px;
+}
+
+.menu-item:active {
+    opacity: 0.7;
+}
+
+
+/* NOMBRE */
+
+.menu-item span {
+    color: #2F2925;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+/* PRECIO */
+
+.menu-item strong {
+    color: #A65D43;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    white-space: nowrap;
+}
+
+
+/* SIGNO */
+
+.toggle {
+    color: #A65D43;
+
+    font-size: 18px;
+}
+
+
+/* DESCRIPCIONES DEL MENÚ */
+
+.menu-description {
+    display: none;
+
+    margin: 8px 0 0;
+
+    color: #6B625C;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* RESERVA */
+
+.reserva {
+    margin-top: 30px;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #D8CEC2;
+
+    border-bottom: 1px solid #D8CEC2;
+}
+
+.reserva h2 {
+    max-width: 550px;
+
+    font-size: 32px;
+
+    margin: 20px 0;
+}
+
+.reserva p:nth-child(3) {
+    max-width: 500px;
+}
+
+
+/* BOTÓN RESERVA */
+
+.btn-reserva {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 13px 22px;
+
+    background-color: #A65D43;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 0.5px;
+
+    transition: background-color 0.2s ease;
+}
+
+.btn-reserva:hover {
+    background-color: #7F4431;
+}
+
+
+/* NOSOTROS */
+
+.nosotros {
+    margin-top: 30px;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid #D8CEC2;
+}
+
+.nosotros h2 {
+    max-width: 550px;
+
+    font-size: 32px;
+
+    margin: 20px 0;
+}
+
+.nosotros p:last-child {
+    max-width: 550px;
+
+    color: #6B625C;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    nav {
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+}
